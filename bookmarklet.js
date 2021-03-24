@@ -7,13 +7,13 @@
     /* If there any previously highlighed words,
     remove them by setting the background to transparent */
 
-    //var spans = document.getElementsByClassName("labnol");
+    var spans = document.getElementsByClassName("labnol");
 
-    //if (spans) {
-    //    for (var i = 0; i < spans.length; i++) {
-    //        spans[i].style.backgroundColor = "transparent";
-    //    }
-    //}
+    if (spans) {
+        for (var i = 0; i < spans.length; i++) {
+            spans[i].style.backgroundColor = "transparent";
+        }
+    }
 
     /* Search Code is courtesy Jesse Ruderman */
     function searchWithinNode(node, te, len) {
