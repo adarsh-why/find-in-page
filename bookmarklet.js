@@ -2,7 +2,7 @@
 
     /* Prompt the user for search terms */
     var text = prompt("Search for:", "");
-    if (text == null || text.length == 0) alert("Matching not found");
+    if (text == null || text.length == 0) return;
 
     /* If there any previously highlighed words,
     remove them by setting the background to transparent */
@@ -37,6 +37,7 @@
                 child = child + searchWithinNode(node.childNodes[child], te, len);
             }
         }
+        alert("Not found")
         return skip;
     }
     searchWithinNode(document.body, text, text.length);
