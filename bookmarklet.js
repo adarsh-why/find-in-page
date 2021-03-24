@@ -1,4 +1,4 @@
-function () {
+(function () {
 
     /* Prompt the user for search terms */
     var text = prompt("Search for:", "");
@@ -40,4 +40,4 @@ function () {
         return skip;
     }
     searchWithinNode(document.body, text, text.length);
-}
+})();
