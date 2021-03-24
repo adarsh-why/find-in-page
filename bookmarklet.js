@@ -2,7 +2,7 @@
 
     /* Prompt the user for search terms */
     var text = prompt("Search for:", "");
-    if (text == null || text.length == 0) return;
+    if (text == null || text.length == 0) alert("Matching not found");
 
     /* If there any previously highlighed words,
     remove them by setting the background to transparent */
