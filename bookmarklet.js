@@ -37,7 +37,6 @@
                 child = child + searchWithinNode(node.childNodes[child], te, len);
             }
         }
-        alert("Not found")
         return skip;
     }
     searchWithinNode(document.body, text, text.length);
