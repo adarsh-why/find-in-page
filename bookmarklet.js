@@ -23,7 +23,7 @@
             pos = node.data.indexOf(te);
             if (pos >= 0) {
                 spannode = document.createElement("span");
-                //spannode.setAttribute("class", "labnol");
+                spannode.setAttribute("class", "labnol");
                 spannode.style.backgroundColor = "yellow";
                 middlebit = node.splitText(pos);
                 endbit = middlebit.splitText(len);
