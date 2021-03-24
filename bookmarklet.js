@@ -24,7 +24,7 @@
             if (pos >= 0) {
                 spannode = document.createElement("span");
                 //spannode.setAttribute("class", "labnol");
-                spannode.style.backgroundColor = "yellow";
+                //spannode.style.backgroundColor = "yellow";
                 middlebit = node.splitText(pos);
                 endbit = middlebit.splitText(len);
                 middleclone = middlebit.cloneNode(true);
