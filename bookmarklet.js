@@ -15,7 +15,6 @@
         }
     }
 
-    /* Search Code is courtesy Jesse Ruderman */
     function searchWithinNode(node, te, len) {
         var pos, skip, spannode, middlebit, endbit, middleclone;
         skip = 0;
