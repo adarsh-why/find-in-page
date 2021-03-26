@@ -18,14 +18,19 @@
     function searchWithinNode(node, te, len) {
         var pos, skip, spannode, middlebit, endbit, middleclone;
         skip = 0;
+        console.log("node", node)
+        console.log("text", text)
         if (node.nodeType == 3) {
             pos = node.data.indexOf(te);
             if (pos >= 0) {
                 spannode = document.createElement("span");
                 spannode.setAttribute("class", "labnol");
                 spannode.style.backgroundColor = "yellow";
+                console.log("Spannode", spannode)
                 middlebit = node.splitText(pos);
+                console.log("middlebit", middlebit)
                 endbit = middlebit.splitText(len);
+                console.log("endbit", endbit)
                 middleclone = middlebit.cloneNode(true);
                 spannode.appendChild(middleclone);
                 middlebit.parentNode.replaceChild(spannode, middlebit);
