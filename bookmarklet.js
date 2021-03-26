@@ -20,8 +20,10 @@
         skip = 0;
         console.log("node", node)
         console.log("text", text)
+        console.log("nodetype", node.nodeType)
         if (node.nodeType == 3) {
             pos = node.data.indexOf(te);
+            console.log("pos", pos)
             if (pos >= 0) {
                 spannode = document.createElement("span");
                 spannode.setAttribute("class", "labnol");
